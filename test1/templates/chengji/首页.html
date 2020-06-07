@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <style>
+        h1{
+            margin-left: 54%;
+            vertical-align: center;
+            horiz-align: center;
+            color: fuchsia;
+            -webkit-animation-delay: 0s;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-name: 'move1';
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-delay: 0s;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-name: 'move1';
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        form{
+            float:left;
+            margin-top: 50px;
+            display: inline;
+            margin-left:50%;
+            width: 80%;
+        }
+        .icheck{
+            border-radius: 5px;
+            border:2px solid dodgerblue;
+        }
+        .bcheck{
+            margin-top: 3px;
+            display:inline;
+            margin-left:10%;
+        }
+        @-webkit-keyframes move1{
+            from{color:fuchsia;}
+            20%{color: blue;}
+            40%{color: darkgreen;}
+            60%{color: crimson;}
+            80%{color: gold;}
+            to{color: cyan;}
+        }
+        @keyframes move1{
+            from{color:fuchsia;}
+            20%{color: blue;}
+            40%{color: darkgreen;}
+            60%{color: crimson;}
+            80%{color: gold;}
+            to{color: cyan;}
+        }
+    </style>
+</head>
+<body>
+<h1 id="move">成绩查询</h1>
+<form method="post" action="/login_check">
+    登录：<input type="text" class="icheck" name="name" placeholder="身份证号，X用大写"><br>
+    <input type="submit" class="bcheck" value="确定">
+</form>
+</form>
+</body>
+</html>
